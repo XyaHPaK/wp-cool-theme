@@ -61,6 +61,12 @@ main {
 
 /* Preloader */
 
+.grid-container {
+	max-width: $container-width;
+	padding: 0 $gutters;
+	margin: 0 auto;
+}
+
 @keyframes spin {
 	100% {
 		transform: rotate(360deg);
