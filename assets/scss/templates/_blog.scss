@@ -16,7 +16,7 @@
 }
 
 .preview__thumb {
-	@include breakpoint(small down) {
+	@media (max-width: 640px) {
 		margin-bottom: 20px;
 	}
 }

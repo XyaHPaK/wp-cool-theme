@@ -59,7 +59,7 @@ ul {
 
 address {
 	font-style: normal;
-	margin-bottom: $global-margin;
+	margin-bottom: 30px;
 }
 
 a {
@@ -109,9 +109,7 @@ input, textarea {
 textarea,
 select,
 .select-styled {
-	$height: ($input-font-size * unitless-calc($input-line-height)) + (get-side($input-padding, 'top') + get-side($input-padding, 'bottom')) + rem-calc(get-border-value($input-border, 'width') * 2);
 	/* STYLES GO THERE */
-	height: $height;
 	margin-bottom: 0;
 }
 
@@ -138,7 +136,6 @@ textarea[rows] {
 }
 
 button, .button, input[type='submit'], input[type='reset'], input[type='button'] {
-	border-width: $button-hollow-border-width;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
 

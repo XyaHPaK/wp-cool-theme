@@ -52,7 +52,7 @@
 	display: flex;
 	align-items: center;
 
-	@include breakpoint(medium) {
+	@media (min-width: 640px) {
 		min-height: 400px;
 	}
 }
@@ -62,7 +62,7 @@
 }
 
 .cell.sbs-block__img-wrap {
-	@include breakpoint(medium) {
+	@media (min-width: 640px) {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -72,7 +72,7 @@
 		margin: 0;
 	}
 
-	@include breakpoint(small down) {
+	@media (max-width: 640px) {
 		margin-bottom: 25px;
 	}
 }

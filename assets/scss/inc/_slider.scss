@@ -20,11 +20,11 @@
 		height: 500px; /*define the height of slide*/
 		transition: height 0.3s ease;
 
-		@include breakpoint(medium down) {
+		@media (max-width: 1024px) {
 			height: 400px;
 		}
 
-		@include breakpoint(small down) {
+		@media (max-width: 640px) {
 			height: 300px;
 		}
 	}

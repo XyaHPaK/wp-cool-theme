@@ -12,7 +12,7 @@
 	}
 }
 
-@include breakpoint(small down) {
+@media (max-width: 640px) {
 	/* TOP BAR Mobile STYLING */
 
 	.menu-grid-container {
@@ -84,19 +84,19 @@
 
 		.submenu {
 			a {
-				padding-left: #{get-side($accordionmenu-padding, 'left') * 1.65};
+
 			}
 
 			.submenu {
 				a {
-					padding-left: #{get-side($accordionmenu-padding, 'left') * 2.3};
+
 				}
 			}
 		}
 	}
 }
 
-@include breakpoint(medium) {
+@media (min-width: 640px) {
 	/* TOP BAR STYLING */
 
 	.header-menu.menu {

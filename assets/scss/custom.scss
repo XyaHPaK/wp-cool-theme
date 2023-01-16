@@ -1,4 +1,6 @@
 // Utils
+@import 'inc/vars';
+// Utils
 @import 'inc/mixins';
 // Plugins
 @import 'plugins/font-awesome/fontawesome';
@@ -52,14 +54,6 @@ main {
 
 @import 'typography';
 
-/* -----------------------------------------
-    Contact Form
------------------------------------------ */
-
-/*basic Gravity Form styles and fixes, if you dont need/use this -
-comment or delete styles below*/
-
-@import 'inc/gform';
 
 /* ------------------------------------
     Basic Styles
@@ -222,13 +216,13 @@ ul.pagination {
 }
 
 .two-columns {
-	@include breakpoint(medium) {
+	@media (min-width: 640px) {
 		columns: 2;
 	}
 }
 
 .three-columns {
-	@include breakpoint(medium) {
+	@media (min-width: 640px) {
 		columns: 3;
 	}
 }
@@ -372,14 +366,14 @@ img {
 	flex: 1 1 auto;
 	flex-basis: calc(33.3333% - 20px);
 
-	@include breakpoint(small down) {
+	@media (max-width: 640px) {
 		flex-basis: 100%;
 	}
 }
 
 .comment-form-author,
 .comment-form-email {
-	@include breakpoint(medium) {
+	@media (min-width: 640px) {
 		margin-right: 30px;
 	}
 }
